@@ -27,7 +27,7 @@ getData = html => {
   });
 
   let title = data[0];
-  data.splice(0, 7);
+  data.splice(0, 8);
   data = data.reduce((acc, val, index) => {
     let obj = {};
     for (i in val) {
