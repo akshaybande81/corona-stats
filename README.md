@@ -1,4 +1,5 @@
 # corona-stats
+
 Get corona statistics from https://www.mohfw.gov.in/ using web scraping
 
 Technologies used:
@@ -10,4 +11,3 @@ Technologies used:
 To install clone the repository and run npm install
 
 Uploaded to heroku link: https://akshay-corona-stats.herokuapp.com/
-
