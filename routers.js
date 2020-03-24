@@ -6,7 +6,7 @@ const cheerio = require("cheerio");
 getData = html => {
   data = [];
   $ = cheerio.load(html);
-  $("table thead tr").each(function() {
+  $("#cases table thead tr").each(function() {
     let temp = [];
     $(this)
       .children("th")
@@ -15,8 +15,9 @@ getData = html => {
       });
     data.push(temp);
   });
-  data.splice(0, 2);
-  $("table tr").each(function() {
+  // data.splice(0, 2);
+  console.log(data, "data");
+  $("#cases table tr").each(function() {
     let temp = [];
     $(this)
       .children("td")
@@ -27,7 +28,8 @@ getData = html => {
   });
 
   let title = data[0];
-  data.splice(0, 9);
+
+  data.splice(0, 2);
   data = data.reduce((acc, val, index) => {
     let obj = {};
     for (i in val) {
